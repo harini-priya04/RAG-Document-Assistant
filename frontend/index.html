@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RAG AI Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated background -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+    <div class="background-glow glow-three"></div>
+
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">✦</span>
+            RAG AI
+        </div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Documents</a>
+            <a href="#">About</a>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            AI Online
+        </div>
+
+    </nav>
+
+
+    <!-- Main -->
+
+    <main class="main-container">
+
+        <!-- Hero -->
+
+        <section class="hero">
+
+            <div class="badge">
+                ✨ AI-Powered Document Assistant
+            </div>
+
+            <h1>
+                Chat with your
+                <span>documents.</span>
+            </h1>
+
+            <p>
+                Upload a PDF and ask questions.
+                Our RAG-powered AI finds relevant information
+                and answers you.
+            </p>
+
+        </section>
+
+
+        <!-- Upload -->
+
+        <section class="upload-card">
+
+            <div class="upload-icon">
+                📄
+            </div>
+
+            <div class="upload-content">
+
+                <h2>Upload your document</h2>
+
+                <p>
+                    Upload a PDF to start chatting with your document.
+                </p>
+
+                <input
+                    type="file"
+                    id="pdfFile"
+                    accept=".pdf"
+                >
+
+                <label for="pdfFile" class="file-label">
+                    Choose PDF
+                </label>
+
+                <button id="uploadBtn" class="upload-btn">
+                    Upload Document
+                </button>
+
+                <p id="uploadStatus"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Chat -->
+
+        <section class="chat-card">
+
+            <!-- Chat Header -->
+
+            <div class="chat-header">
+
+                <div class="bot-avatar">
+                    🤖
+                </div>
+
+                <div>
+                    <h2>RAG Assistant</h2>
+
+                    <p>
+                        Ask anything about your document
+                    </p>
+                </div>
+
+                <div class="online-indicator"></div>
+
+            </div>
+
+
+            <!-- AI Answer -->
+
+            <div class="chat-messages">
+
+                <div class="message ai-message">
+
+                    <div class="message-avatar ai-avatar">
+                        ✦
+                    </div>
+
+                    <div class="message-content">
+
+                        <span class="message-name">
+                            RAG AI
+                        </span>
+
+                        <p id="answer">
+                            Your AI-generated answer will appear here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Source -->
+
+            <div class="source-container">
+
+                <span class="source-icon">
+                    📚
+                </span>
+
+                <div>
+
+                    <span class="source-title">
+                        SOURCE
+                    </span>
+
+                    <p id="source">
+                        Your document source will appear here.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Question Input -->
+
+            <div class="question-area">
+
+                <input
+                    type="text"
+                    id="question"
+                    placeholder="Ask something about your document..."
+                    autocomplete="off"
+                >
+
+                <button id="askBtn" class="ask-btn">
+
+                    <span>Ask</span>
+
+                    <span class="send-icon">
+                        ➤
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <p class="chat-hint">
+                Powered by RAG · Qwen Embeddings · ChromaDB · DeepSeek
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            RAG AI Document Assistant · Built with Python & AI
+        </p>
+
+    </footer>
+
+
+    <script src="script1.js"></script>
+
+</body>
+
+</html>
